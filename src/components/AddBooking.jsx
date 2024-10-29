@@ -1,55 +1,11 @@
 import { useState } from 'react';
 import { Button, Modal, Form } from 'react-bootstrap';
-// import { Provider } from "react-redux";
-// import axios from 'axios';
-// import { jwtDecode } from "jwt-decode";
+
 import { saveBookings } from '../features/bookingsSlice';
 import { useDispatch } from 'react-redux';
 
 
-// export default function AddBooking({ show, handleClose }) {
-//     const [primaryService, setPrimaryService] = useState("");
-//     const [secondaryService, setSecondaryService] = useState("");
-//     const [date, setDate] = useState("");
-//     const [time, setTime] = useState("");
-//     const [name, setName] = useState("");
-//     const [phoneNumber, setPhoneNumber] = useState("");
-//     const [specialRequest, setSpecialRequest] = useState("");
 
-
-//     //handle post booking
-//     const handleSave = () => {
-//         //get stored JWT token
-//         const token = localStorage.getItem("authToken");
-
-//         //Decode the token to fetch the userid
-//         const decode = jwtDecode(token);
-//         const userId = decode.id
-
-//         const data = {
-//             primary_service: primaryService,
-//             secondary_service: secondaryService,
-//             date: date,
-//             time: time,
-//             name: name,
-//             phone_number: phoneNumber,
-//             special_request: specialRequest,
-//             user_id: userId,
-//         };
-
-//         axios
-//             .post("https://75f59249-f39e-45e2-bdbc-28aacda3df6a-00-1uz82hdu0wwx5.picard.replit.dev/booking", data)
-//             .then((response) => {
-//                 console.log("Success:", response.data);
-//                 handleClose();
-//             })
-//             .catch((error) => {
-//                 console.log("Error", error);
-//             });
-//     }
-
-//test2.0
-//new code - test    
 export default function AddBooking({ show, handleClose }) {
     // console.log('User ID:', user_id);
 
@@ -62,17 +18,7 @@ export default function AddBooking({ show, handleClose }) {
     const [specialRequest, setSpecialRequest] = useState("");
     const dispatch = useDispatch();
 
-    // const handleSave = () => {
-    //     dispatch(saveBookings({ primaryService, secondaryService, date, time, name, phoneNumber, specialRequest, user_id }));
-    //     handleClose();
-    //     setPrimaryService("");
-    //     setSecondaryService("");
-    //     setDate("");
-    //     setTime("");
-    //     setName("");
-    //     setPhoneNumber("");
-    //     setSpecialRequest("");
-    // }
+
 
     const handleSave = () => {
         const userId = localStorage.getItem("user_id"); // Fetch the user_id from localStorage
