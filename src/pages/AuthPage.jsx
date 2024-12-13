@@ -73,7 +73,7 @@ export default function AuthPage() {
             </Col>
             <Col md={3} className="p-4" style={{ backgroundColor: '	#FFFF8F', boxSizing: 'border-box', margin: '0', padding: '0' }}>
                 <div style={{ padding: '16px' }}>
-                    <h7 className="d-flex justify-content-left" style={{ textAlign: "right" }}><strong style={{ color: '#C21E56' }}>W</strong>O<strong style={{ color: '#C21E56' }}>M</strong>ANICURE</h7>
+                    <h2 className="d-flex justify-content-left" style={{ textAlign: "right" }}><strong style={{ color: '#C21E56' }}>W</strong>O<strong style={{ color: '#C21E56' }}>M</strong>ANICURE</h2>
 
                     <Row className="mt-3">
                         <Col md={6} style={{ width: '100%' }}>
